@@ -4,6 +4,7 @@
 apt-get update
 apt-get install -y ruby1.9.3 ruby1.9.1-dev rubygems nodejs npm chromium x11-xserver-utils
 gem install dashing bundler execjs --no-rdoc --no-ri
+su -l pi (cd dashing; bundle install)
 
 cat<<EOF | sudo tee /etc/xdg/lxsession/LXDE/autostart
 @lxpanel --profile LXDE
