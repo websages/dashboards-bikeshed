@@ -1,0 +1,42 @@
+# Using a Raspbian image
+
+apt-get update
+apt-get install -y ruby1.9.3 ruby1.9.1-dev rubygems nodejs npm chromium x11-xserver-utils
+gem install dashing bundler execjs --no-rdoc --no-ri
+
+cat<<EOF| sudo tee /etc/xdg/lxsession/LXDE/autostart
+@lxpanel --profile LXDE
+@pcmanfm --desktop --profile LXDE
+@xset s off
+@xset s noblank
+@xset -dpms
+@xhost +
+@/home/pi/bin/dashing-keepalive
+EOF
+
+if [ ! -d /home/pi/bin ];then
+  mkdir /home/pi/bin
+  chown pi:users /home/pi/bin
+  chmod 755 /home/pi/bin
+fi
+
+cat<<EOF > /home/pi/bin/dashing-keepalive
+#!/bin/bash
+export DISPLAY=:0
+file=\$(/usr/bin/xwininfo -root | /bin/grep -- -geometry | /usr/bin/awk '{print \$NF}')
+while [ 1 ]; do
+  /bin/netstat -an | grep "LISTEN " | grep 0.0.0.0:3030
+  EXIT=\$?
+  if [ \${EXIT} -eq 0 ]; then
+    /usr/bin/chromium --incognito --kiosk "http://127.0.0.1:3030/\$file"
+  fi
+  /bin/sleep 5
+done
+EOF
+chown pi:users /home/pi/bin/dashing-keepalive
+chmod 755 /home/pi/bin/dashing-keepalive
+
+[ ! -f /etc/rc.local.dist ] && cp /etc/rc.local /etc/rc.local.dist
+grep "dashing start" /etc/rc.local || \
+  awk '{ if($0 == "exit 0"){print "/bin/su -l pi -c \"(cd dashing; . .app-env; dashing start)\""; }; print $0;}' /etc/rc.local.dist > /etc/rc.local
+chmod 755 /etc/rc.local
