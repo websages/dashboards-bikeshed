@@ -1,0 +1,24 @@
+.widget-bcycle {
+  background-image: url("/assets/bike.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 400px 400px;
+  background-color: #000000;
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+}
+
+.bcycle-status-active {
+  background-color: #242876;
+}
+
+.bcycle-status-unavailable {
+   background-color: #999999;
+}
+
+.bcycle-status-unknown {
+   background-color: #999999;
+}
