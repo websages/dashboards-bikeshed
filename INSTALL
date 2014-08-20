@@ -40,3 +40,5 @@ chmod 755 /home/pi/bin/dashing-keepalive
 grep "dashing start" /etc/rc.local || \
   awk '{ if($0 == "exit 0"){print "/bin/su -l pi -c \"(cd dashing; . .app-env; dashing start)\""; }; print $0;}' /etc/rc.local.dist > /etc/rc.local
 chmod 755 /etc/rc.local
+
+# copy ~/dashing/.app-env from another node
