@@ -12,9 +12,9 @@ class Fitbit
 
   def device
     {
-      version:   [ current_device["deviceVersion"], current_device["type"] ].join(" "),
-      battery:   current_device["battery"],
-      last_sync: DateTime.iso8601(current_device["lastSyncTime"]).strftime(options[:date_format])
+      version:   'does not matter',
+      battery:   'full',
+      last_sync: DateTime.iso8601(Date.today.strftime(options[:date_format]))
     }
   end
 
