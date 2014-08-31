@@ -104,7 +104,7 @@ class Fitbit
   end
 
   def sorted_leaderboard
-    client.leaderboard["friends"].sort { |one, other| one["rank"]["steps"] <=> other["rank"]["steps"] }.take 5
+    client.leaderboard["friends"].sort { |one, other| one["rank"]["steps"] <=> other["rank"]["steps"] }.take 10
   end
 
   def leaderboard_style(friend)
