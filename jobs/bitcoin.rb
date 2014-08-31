@@ -18,5 +18,5 @@ def get_bitcoin(market='USD')
     response = http.request(request)
     bitcoin_response = JSON.parse(response.body)
 
-	bitcoin_response['last']
+    bitcoin_response['last']
 end
