@@ -4,7 +4,7 @@
 %span(id="data")
   %h3
     %span Weekly Leaderboard
-    %span(data-showif="people.length | gt 5") (Top 5)
+    %span(data-showif="people.length | gt 10") (Top 10)
 
   %ul
     %li(data-foreach-person="people" data-bind-class="person.style")
