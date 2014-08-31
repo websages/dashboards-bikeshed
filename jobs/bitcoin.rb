@@ -1,5 +1,4 @@
 current_price = 0
-current_karma = 0
 
 SCHEDULER.every '5m' do
   last_price = current_price
