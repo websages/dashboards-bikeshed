@@ -1,4 +1,4 @@
-SCHEDULER.every '10s', :first_in => 0 do |job|
+SCHEDULER.every '5m', :first_in => 0 do |job|
 
   # dashboard_list = Dir["dashboards/*.erb"]
   dashboard_list = Dir["dashboards/*.erb"]
