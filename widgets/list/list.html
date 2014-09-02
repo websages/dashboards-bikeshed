@@ -9,8 +9,8 @@
 
 <ul class="list-nostyle">
   <li data-foreach-item="items">
-    <span class="label" data-bind="item.label"></span>
-    <span class="value" data-bind="item.value"></span>
+    <span class="label" data-bind="item.label | raw"></span>
+    <span class="value" data-bind="item.value | raw"></span>
   </li>
 </ul>
 
