@@ -10,3 +10,6 @@ gem 'twitter', '>= 5.9.0'
 
 # Foursquare
 gem 'foursquare2'
+
+# Let's get rails-y
+gem "actionview"
