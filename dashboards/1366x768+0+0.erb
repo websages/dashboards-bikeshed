@@ -1,15 +1,13 @@
 <script type='text/javascript'>
 $(function() {
-//Dashing.widget_base_dimensions = [w,   h  ]
   Dashing.widget_base_dimensions = [258, 240]
   Dashing.numColumns = 5
 });
 </script>
 
+<% content_for :title do %>1366 x 768<% end %>
 
-<% content_for :title do %>1080p dashboard<% end %>
-
-<div class="gridster">
+<div class="gridster" data-grid-width="1366" data-grid-height="768">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="3">
       <div data-id="foursquare" data-view="List" data-unordered="true" data-title="Swarm Checkins" data-moreinfo="Where is everyone?" style="background: -moz-linear-gradient(center top , #fd9627, #ffa633) repeat scroll 0 0 rgba(0, 0, 0, 0);"></div>
