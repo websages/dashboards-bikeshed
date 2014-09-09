@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+export CC=gcc
+
+test -z "$RACK_ENV" && RACK_ENV='development'
+
+bundle check --path vendor/gems 2>&1 > /dev/null || {
+  bundle install --binstubs bin --path vendor/gems --quiet --without production
+}

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+. script/bootstrap
+
+exec bundle exec dashing start
