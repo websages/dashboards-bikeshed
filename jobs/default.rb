@@ -4,7 +4,8 @@ SCHEDULER.every '5m', :first_in => 0 do |job|
 
   dashboards = []
   for dashboard in dashboard_list
-    next if dashboard === 'dashboards/layout.erb'
+    next if dashboard == 'dashboards/layout.erb' || dashboard == 'dashboards/0000_start.erb'
+
     dashboard = dashboard.match(/^dashboards\/(.*)\.erb$/)[1]
     dashboards << {
       label: dashboard,
