@@ -8,7 +8,7 @@ SCHEDULER.every '5m', :first_in => 0 do |job|
 
     dashboard = dashboard.match(/^dashboards\/(.*)\.erb$/)[1]
     dashboards << {
-      label: dashboard,
+      label: "<a href='#{dashboard}'>#{dashboard}</a>",
       value: "<a href='#{dashboard}'>Go</a>"
     }
   end
