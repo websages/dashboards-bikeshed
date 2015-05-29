@@ -24,7 +24,7 @@ SCHEDULER.every '5m', :first_in => 0 do |job|
       estimate = (item['estimate']/60).ceil
       pickup_times << {
         label: item['localized_display_name'],
-        value: "#{estimate} minute(s)"
+        value: "#{estimate}m"
       }
     end
 

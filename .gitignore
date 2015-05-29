@@ -1,5 +1,4 @@
 .bundle/
-local_test.sh
 history.yml
 Gemfile.lock
 *DS_STORE
