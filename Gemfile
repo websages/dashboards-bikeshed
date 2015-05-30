@@ -13,3 +13,6 @@ gem 'foursquare2'
 
 # Let's get rails-y
 gem "actionview"
+
+# Weather parsing
+gem 'xml-simple', '~> 1.1.4'

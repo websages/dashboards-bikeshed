@@ -3,11 +3,18 @@
 */
 
 div[data-grid-height="768"] {
+  h1 {
+    font-size: 135%;
+  }
+  h2 {
+    font-size: 180%;
+  }
   [data-sizey="1"] .icon-background {
     top: -100px;
   }
 
   [data-sizey="2"] .icon-background {
+    font-size: 190px;
     top: 25px;
   }
 
