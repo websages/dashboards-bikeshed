@@ -1,17 +1,21 @@
 SCHEDULER.every '20s' do
+  if File.exist? '/usr/local/bin/lasttripped'
+    output = `/usr/local/bin/lasttripped`
 
-  output = `/usr/local/bin/lasttripped`
+    status_images = {
+      full:  '/stall/shittersfull.jpg',
+      empty: '/stall/shittersclear.jpg'
+    }
 
-  status_images = {
-    full:  '/stall/shittersfull.jpg',
-    empty: '/stall/shittersclear.jpg'
-  }
+    if output =~ /open/
+      image_path = status_images[:empty]
+    else
+      image_path = status_images[:full]
+    end
 
-  if output =~ /open/
-    image_path = status_images[:empty]
+    send_event('stall_status', { image: image_path })
   else
-    image_path = status_images[:full]
+    puts "Could not find stall binary."
+    send_event('stall_status', { image: '/stall/shittersclear.jpg' })
   end
-
-  send_event('stall_status', { image: image_path })
 end

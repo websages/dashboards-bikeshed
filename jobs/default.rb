@@ -1,6 +1,6 @@
 SCHEDULER.every '5m', :first_in => 0 do |job|
 
-  dashboard_list = Dir["dashboards/*.erb"]
+  dashboard_list = Dir["dashboards/*.erb"].sort
 
   dashboards = []
   for dashboard in dashboard_list

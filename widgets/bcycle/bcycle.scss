@@ -1,17 +1,33 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #7EBBE4;
+
+// ----------------------------------------------------------------------------
+// Widget-bcycle styles
+// ----------------------------------------------------------------------------
 .widget-bcycle {
+
+  background-color: $background-color;
+
+  .title {
+    line-height: 1em;
+  }
+
   .updated-at {
     color: rgba(0, 0, 0, 0.3);
   }
-}
 
-.bcycle-status-active {
-  background-color: #242876;
-}
+  .bcycle-status-active {
+    background-color: $background-color;
+  }
 
-.bcycle-status-unavailable {
-   background-color: #999999;
-}
+  .bcycle-status-unavailable {
+     background-color: $background-color;
+  }
 
-.bcycle-status-unknown {
-   background-color: #999999;
+  .bcycle-status-unknown {
+     background-color: $background-color;
+  }
+
 }
