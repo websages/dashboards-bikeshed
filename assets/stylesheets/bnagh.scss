@@ -58,3 +58,17 @@ div[data-grid-height="984"] {
     top: 120px;
   }
 }
+
+div[data-grid-height="1024"] {
+  [data-sizey="1"] .icon-background {
+    top: -60px;
+  }
+
+  [data-sizey="2"] .icon-background {
+    top: 80px;
+  }
+
+  [data-sizey="3"] .icon-background {
+    top: 120px;
+  }
+}
