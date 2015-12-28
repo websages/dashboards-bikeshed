@@ -1,0 +1,42 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [308, 328]
+  Dashing.numColumns = 4
+});
+</script>
+
+<% content_for :title do %>1280 x 1024<% end %>
+
+<div class="gridster" data-grid-width="1280" data-grid-height="1024">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="foursquare" data-view="List" data-unordered="true" data-title="Swarm Checkins"></div>
+      <i class="fa fa-foursquare icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="fa fa-clock-o icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="weather" data-view="Weather"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="stall_status" data-view="Image" data-width="150" data-title="Stall Status"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="uber_pickup_time" data-view="List" data-unordered="true" data-title="Get an Uber"></div>
+      <i class="fa fa-taxi icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
+      <div data-id="twitter_mentions" data-view="Comments"></div>
+      <i class="fa fa-twitter icon-background"></i>
+    </li>
+
+  </ul>
+</div>
