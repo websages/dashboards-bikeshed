@@ -1,6 +1,6 @@
 current_price = 0
 
-SCHEDULER.every '10m' do
+SCHEDULER.every '2m' do
   last_price = current_price
   current_price = get_bitcoin('USD')
 
