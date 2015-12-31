@@ -1,7 +1,0 @@
----
-:oauth:
-  :consumer_key: somedata
-  :consumer_secret: somedata
-  :token: somedata
-  :secret: somedata
-  :user_id: somedata

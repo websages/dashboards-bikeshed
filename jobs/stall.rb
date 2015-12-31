@@ -3,8 +3,8 @@ SCHEDULER.every '20s' do
     output = `/usr/local/bin/lasttripped`
 
     status_images = {
-      full:  '/stall/shittersfull.jpg',
-      empty: '/stall/shittersclear.jpg'
+      full:  'assets/stall/shittersfull.jpg',
+      empty: 'assets/stall/shittersclear.jpg'
     }
 
     if output =~ /open/
@@ -16,6 +16,6 @@ SCHEDULER.every '20s' do
     send_event('stall_status', { image: image_path })
   else
     puts "Could not find stall binary."
-    send_event('stall_status', { image: '/stall/shittersclear.jpg' })
+    send_event('stall_status', { image: 'assets/stall/shittersclear.jpg' })
   end
 end

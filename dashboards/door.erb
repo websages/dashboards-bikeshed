@@ -1,27 +1,23 @@
 <script type='text/javascript'>
 $(function() {
-  Dashing.widget_base_dimensions = [275, 285]
-  Dashing.numColumns = 5
+  Dashing.widget_base_dimensions = [308, 328]
+  Dashing.numColumns = 4
 });
 </script>
 
-<% content_for :title do %>1440 x 900<% end %>
+<% content_for :title do %>1280 x 1024<% end %>
 
-<div class="gridster" data-grid-width="1440" data-grid-height="900">
+<div class="gridster" data-grid-width="1280" data-grid-height="1024">
   <ul>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
-      <div data-id="fitbit_leaderboard" data-view="FitbitLeaderboard" data-title="Fitbit Leaders"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
-      <div data-id="uber_pickup_time" data-view="List" data-unordered="true" data-title="Get an Uber"></div>
-      <i class="fa fa-taxi icon-background"></i>
-    </li>
 
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-view="Clock"></div>
       <i class="fa fa-clock-o icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="uber_pickup_time" data-view="List" data-unordered="true" data-title="Get an Uber"></div>
+      <i class="fa fa-taxi icon-background"></i>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">

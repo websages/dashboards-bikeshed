@@ -18,7 +18,7 @@ class RecentFoursquare
     client = Foursquare2::Client.new(:oauth_token => ENV['FOURSQUARE_OAUTH_TOKEN'], :api_version => '20140830')
     recent_checkins = client.recent_checkins
     locations = []
-    for row in recent_checkins[0...5]
+    for row in recent_checkins[0...10]
       time = Time.at(row['createdAt'])
       locations << {
         label: "#{row['user']['firstName']} #{row['user']['lastName']} @ #{row['venue']['name']} - <em style='color:white;''>#{time_ago_in_words time} ago</em>",

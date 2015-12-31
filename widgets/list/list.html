@@ -1,7 +1,10 @@
+<img class="image" data-bind-src="image" data-insertif="image" />
+
 <h1 class="title" data-bind="title"></h1>
 
 <ol>
   <li data-foreach-item="items">
+  	<img class="image" data-bind-src="item.avatar" data-insertif="item.avatar" width="48" height="48" />
     <span class="label" data-bind="item.label | raw"></span>
     <span class="value" data-bind="item.value | raw"></span>
   </li>
@@ -9,6 +12,7 @@
 
 <ul class="list-nostyle">
   <li data-foreach-item="items">
+  	<img class="image" data-bind-src="item.avatar" data-insertif="item.avatar" width="48" height="48" />
     <span class="label" data-bind="item.label | raw"></span>
     <span class="value" data-bind="item.value | raw"></span>
   </li>
