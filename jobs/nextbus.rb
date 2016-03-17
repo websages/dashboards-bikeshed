@@ -1,6 +1,9 @@
 require 'net/http'
 require 'uri'
 require 'json'
+require 'action_view'
+
+include ActionView::Helpers::DateHelper
 
 NEXTBUS_API_KEY = ENV['NEXTBUS_API_KEY']
 NEXTBUS_LATLON = ENV['NEXTBUS_LATLON']
@@ -42,9 +45,10 @@ class NextBus
         title: data['stop_name'], text: 'No next bus. :('
       }
     else
+      next_stop = Time.parse(data['next']['arrival_time_str'])
       {
-        title: data['stop_name'], text: data['next']['arrival_time_str'],
-        moreinfo: "Route ##{data['next']['route_id']} / #{data['next']['route_long_name']}"
+        title: data['stop_name'], text: distance_of_time_in_words_to_now(next_stop),
+        moreinfo: "Route ##{data['next']['route_id']} / #{data['next']['route_long_name']} leaves at #{data['next']['arrival_time_str']}"
       }
     end
   end
