@@ -46,11 +46,7 @@ class NextBus
         title: data['stop_name'], text: 'No next bus. :('
       }
     else
-      if Time.now.dst?
-        next_stop = Time.parse("#{data['next']['arrival_time_str']} CDT")
-      else
-        next_stop = Time.parse("#{data['next']['arrival_time_str']} CST")
-      end
+      next_stop = Time.parse("#{data['next']['arrival_time_str']} #{Time.now.dst? ? 'CDT' : 'CST'}")
       {
         title: data['stop_name'], text: distance_of_time_in_words_to_now(next_stop),
         moreinfo: "Route ##{data['next']['route_id']} / #{data['next']['route_long_name']} leaves at #{data['next']['arrival_time_str']}"
