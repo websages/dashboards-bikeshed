@@ -2,6 +2,7 @@ require 'net/http'
 require 'uri'
 require 'json'
 require 'action_view'
+require 'time'
 
 include ActionView::Helpers::DateHelper
 
@@ -45,7 +46,11 @@ class NextBus
         title: data['stop_name'], text: 'No next bus. :('
       }
     else
-      next_stop = Time.parse("#{data['next']['arrival_time_str']} CST")
+      if Time.now.dst?
+        next_stop = Time.parse("#{data['next']['arrival_time_str']} CDT")
+      else
+        next_stop = Time.parse("#{data['next']['arrival_time_str']} CST")
+      end
       {
         title: data['stop_name'], text: distance_of_time_in_words_to_now(next_stop),
         moreinfo: "Route ##{data['next']['route_id']} / #{data['next']['route_long_name']} leaves at #{data['next']['arrival_time_str']}"
