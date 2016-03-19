@@ -4,9 +4,9 @@ dashing-bnagh
 Development
 ===========
 
-Just run:
-
 ```
+bundle install
+cp .app-env-dist .app-env
 script/server
 ```
 
