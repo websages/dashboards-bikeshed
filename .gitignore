@@ -1,6 +1,5 @@
 .bundle/
 history.yml
-Gemfile.lock
 *DS_STORE
 .app-env
 .fitbit.yml
