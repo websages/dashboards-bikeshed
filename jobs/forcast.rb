@@ -14,7 +14,7 @@ forecast_location_long = "-86.7816"
 # "uk" - SI w. windSpeed in mph
 forecast_units = "si"
 
-SCHEDULER.every '5m', :first_in => 0 do |job|
+#SCHEDULER.every '5m', :first_in => 0 do |job|
   http = Net::HTTP.new("api.forecast.io", 443)
   http.use_ssl = true
   http.verify_mode = OpenSSL::SSL::VERIFY_PEER
@@ -22,5 +22,6 @@ SCHEDULER.every '5m', :first_in => 0 do |job|
   forecast = JSON.parse(response.body)
   forecast_current_temp = forecast["currently"]["temperature"].round
   forecast_hour_summary = forecast["hourly"]["summary"]
-  send_event('forecast', { temperature: "#{forecast_current_temp}&deg;", hour: "#{forecast_hour_summary}"})
-end
+  puts "forecast temperature: #{forecast_current_temp}&deg;, hour: #{forecast_hour_summary}"
+  # send_event('forecast', { temperature: "#{forecast_current_temp}&deg;", hour: "#{forecast_hour_summary}"})
+#end
