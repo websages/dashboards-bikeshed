@@ -19,8 +19,8 @@ SCHEDULER.every '5m', :first_in => 0 do |job|
   http.use_ssl = true
   http.verify_mode = OpenSSL::SSL::VERIFY_PEER
   response = http.request(Net::HTTP::Get.new("/forecast/#{forecast_api_key}/#{forecast_location_lat},#{forecast_location_long}?units=#{forecast_units}"))
-  forecast = JSON.parse(response.body)  
+  forecast = JSON.parse(response.body)
   forecast_current_temp = forecast["currently"]["temperature"].round
-  forecast_hour_summary = forecast["minutely"]["summary"]
+  forecast_hour_summary = forecast["hourly"]["summary"]
   send_event('forecast', { temperature: "#{forecast_current_temp}&deg;", hour: "#{forecast_hour_summary}"})
 end
