@@ -1,5 +1,6 @@
 require 'net/https'
 require 'json'
+require 'pp'
 
 # Forecast API Key from https://developer.forecast.io
 forecast_api_key = ""
@@ -19,6 +20,7 @@ forecast_units = "si"
   http.use_ssl = true
   http.verify_mode = OpenSSL::SSL::VERIFY_PEER
   response = http.request(Net::HTTP::Get.new("/forecast/#{forecast_api_key}/#{forecast_location_lat},#{forecast_location_long}?units=#{forecast_units}"))
+  pp response
   forecast = JSON.parse(response.body)
   forecast_current_temp = forecast["currently"]["temperature"].round
   forecast_hour_summary = forecast["hourly"]["summary"]
