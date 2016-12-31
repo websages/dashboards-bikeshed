@@ -57,9 +57,9 @@ class NextBus
   private
 
   def request(endpoint)
-    uri = URI("http://nextbus.jt2k.com/api/#{endpoint}?key=#{api_key}")
+    uri = URI("https://nextbus.jt2k.com/api/#{endpoint}?key=#{api_key}")
     http = Net::HTTP.new(uri.host, uri.port)
-    http.use_ssl = false
+    http.use_ssl = true
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
     request = Net::HTTP::Get.new(uri.request_uri)
 
