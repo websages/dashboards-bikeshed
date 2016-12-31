@@ -3,7 +3,7 @@ require 'json'
 require 'pp'
 
 # Forecast API Key from https://developer.forecast.io
-forecast_api_key = ""
+forecast_api_key = ENV['FORCASTIO_API_KEY']
 
 # Latitude, Longitude for location
 forecast_location_lat = "36.1627"
