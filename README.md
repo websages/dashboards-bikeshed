@@ -26,3 +26,4 @@ will set up the device to boot into dashing.
 You will need to enable boot-to-graphical mode with raspi-config as well.
 
 Any secrets should be exported to the environment in ```/home/pi/.app-env```.
+
