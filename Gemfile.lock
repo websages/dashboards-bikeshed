@@ -149,5 +149,8 @@ DEPENDENCIES
   twitter (>= 5.9.0)
   xml-simple (~> 1.1.4)
 
+RUBY VERSION
+   ruby 2.3.3p222
+
 BUNDLED WITH
-   1.13.6
+   1.13.7
