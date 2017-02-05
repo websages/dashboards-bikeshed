@@ -1,1 +1,1 @@
-web: bundle exec dashing start
+web: bundle exec rackup -s puma -p 3030
