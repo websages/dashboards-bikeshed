@@ -48,13 +48,22 @@ class NextBus
     else
       next_stop = Time.parse("#{data['next']['arrival_time_str']} #{Time.now.dst? ? 'CDT' : 'CST'}")
       {
-        title: data['stop_name'], text: distance_of_time_in_words_to_now(next_stop),
+        title: data['stop_name'], text: humanize(next_stop),
         moreinfo: "Route ##{data['next']['route_id']} / #{data['next']['route_long_name']} leaves at #{data['next']['arrival_time_str']}"
       }
     end
   end
 
   private
+
+  def humanize secs
+    [[60, :seconds], [60, :minutes], [24, :hours], [1000, :days]].map{ |count, name|
+      if secs > 0
+        secs, n = secs.divmod(count)
+        "#{n.to_i} #{name}"
+      end
+    }.compact.reverse.join(' ')
+  end
 
   def request(endpoint)
     uri = URI("https://nextbus.jt2k.com/api/#{endpoint}?key=#{api_key}")
