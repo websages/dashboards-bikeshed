@@ -1,10 +1,7 @@
 require 'net/http'
 require 'uri'
 require 'json'
-require 'action_view'
 require 'time'
-
-include ActionView::Helpers::DateHelper
 
 NEXTBUS_API_KEY = ENV['NEXTBUS_API_KEY']
 NEXTBUS_LATLON = ENV['NEXTBUS_LATLON']
