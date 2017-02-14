@@ -15,7 +15,7 @@ class RecentFoursquare
     recent_checkins = client.recent_checkins
     locations = []
     for row in recent_checkins[0...10]
-      time = Time.at(row['createdAt'])
+      time = Time.at(row['createdAt']).to_i
       locations << {
         label: "#{row['user']['firstName']} #{row['user']['lastName']} @ #{row['venue']['name']} - <em style='color:white;''>#{humanize time} ago</em>",
       }

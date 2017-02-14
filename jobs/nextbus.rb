@@ -45,7 +45,7 @@ class NextBus
     else
       next_stop = Time.parse("#{data['next']['arrival_time_str']} #{Time.now.dst? ? 'CDT' : 'CST'}")
       {
-        title: data['stop_name'], text: humanize(next_stop),
+        title: data['stop_name'], text: humanize(next_stop.to_i),
         moreinfo: "Route ##{data['next']['route_id']} / #{data['next']['route_long_name']} leaves at #{data['next']['arrival_time_str']}"
       }
     end
