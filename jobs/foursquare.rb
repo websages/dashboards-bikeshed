@@ -1,5 +1,4 @@
 require 'foursquare2'
-require 'action_view'
 
 SCHEDULER.every '5m' do
   begin
@@ -11,20 +10,25 @@ SCHEDULER.every '5m' do
 end
 
 class RecentFoursquare
-
-  include ActionView::Helpers::DateHelper
-
   def recent_checkins
     client = Foursquare2::Client.new(:oauth_token => ENV['FOURSQUARE_OAUTH_TOKEN'], :api_version => '20140830')
     recent_checkins = client.recent_checkins
     locations = []
     for row in recent_checkins[0...10]
-      time = Time.at(row['createdAt'])
+      time = Time.at(row['createdAt']).to_i
       locations << {
-        label: "#{row['user']['firstName']} #{row['user']['lastName']} @ #{row['venue']['name']} - <em style='color:white;''>#{time_ago_in_words time} ago</em>",
+        label: "#{row['user']['firstName']} #{row['user']['lastName']} @ #{row['venue']['name']} - <em style='color:white;''>#{humanize time} ago</em>",
       }
     end
     return locations
   end
 
+  def humanize secs
+    [[60, :seconds], [60, :minutes], [24, :hours], [1000, :days]].map{ |count, name|
+      if secs > 0
+        secs, n = secs.divmod(count)
+        "#{n.to_i} #{name}"
+      end
+    }.compact.reverse.join(' ')
+  end
 end
