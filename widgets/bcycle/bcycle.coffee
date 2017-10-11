@@ -14,6 +14,6 @@ class Dashing.Bcycle extends Dashing.Widget
     ready: ->
         $(@node).addClass(@get('backgroundClass'))
 
-
     onData: (data) ->
+        console.log 'sent data', data
         $(@node).addClass(@get('backgroundClass'))

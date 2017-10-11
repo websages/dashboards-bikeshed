@@ -8,18 +8,13 @@ B-cycle is a bike sharing service that operates in several American cities. More
 
 A demo repository is [available on GitHub](https://github.com/stephenyeargin/dashing-bcycle) and here is a [live Dashboard on Heroku](http://dashing-bcycle.herokuapp.com/).
 
-## Obtaining an API Token
-
-[Contact B-Cycle](https://www.bcycle.com/contactus.aspx) for an API Token. You will be asked to complete an agreement not to abuse / resell the data. After you returned that signed, they will give you an API Token along with a PDF version of the documentation.
-
 ## Installation
 
 At the top of `jobs/bcycle.rb`, you will see the two required enviornment variables (or simply modify that file to suit your needs).
 
-* `BCYCLE_API_KEY`
-* `BCYCLE_PROGRAM_ID`
+* `BCYCLE_CITY` - Your city (lowercase)
 
-Use the endpoint in the documentation to get a list of active "programs" (usually corespond to a city).
+Use the endpoint in the documentation to get a list of active "programs" (usually correspond to a city).
 
 Copy these files into their appropriate spot or use `dashing install 7678371` in the project directory to have Dashing do it for you.
 
@@ -27,10 +22,10 @@ After the job is up and running, you simply add the following syntax to your `{d
 
 ```
   <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
-   <div data-id="bcycle_2315" data-view="Bcycle"></div>
+   <div data-id="bcycle_nashville_2315" data-view="Bcycle"></div>
   </li>
 ```
 
-Note that you will want to change the `bcycle_2315` to `bcycle_{your_station_id}`. You can have as many stations as you want on a dashboard.
+Note that you will want to change the `bcycle_nashville_2315` to `bcycle_{your_city}_{your_station_id}`. You can have as many stations as you want on a dashboard.
 
 The `bike.svg` needs to be moved into your `assets/images/` folder manually.
