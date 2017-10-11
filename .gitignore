@@ -1,3 +1,4 @@
+.ruby-version
 .bundle/
 history.yml
 *DS_STORE
