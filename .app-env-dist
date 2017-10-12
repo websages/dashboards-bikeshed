@@ -24,8 +24,7 @@ export FITBIT_OAUTH_TOKEN_SECRET=somedata
 export FOURSQUARE_OAUTH_TOKEN=somedata
 
 # Weather
-export WEATHER_OBSERVATION_STATION=some_data
-export WEATHER_OBSERVATION_UNIT=some_data
+export DARKSKY_API_KEY=somedata
 
 # Nextbus
 export NEXTBUS_API_KEY=somedata
