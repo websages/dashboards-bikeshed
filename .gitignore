@@ -3,6 +3,8 @@
 history.yml
 *DS_STORE
 .app-env
-.fitbit.yml
 vendor/*
 bin/
+
+# legacy
+.fitbit.yml

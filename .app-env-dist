@@ -14,12 +14,6 @@ export UBER_SERVER_TOKEN=somedata
 export UBER_LATITUDE=somedata
 export UBER_LONGITUDE=somedata
 
-# Fitbit
-export FITBIT_CLIENT_ID=somedata
-export FITBIT_CLIENT_SECRET=somedata
-export FITBIT_OAUTH_TOKEN=somedata
-export FITBIT_OAUTH_TOKEN_SECRET=somedata
-
 # Foursquare
 export FOURSQUARE_OAUTH_TOKEN=somedata
 
