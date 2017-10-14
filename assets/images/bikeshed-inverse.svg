@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 102 105"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="bikeshed-logo-inverse.svg"
+   width="1020"
+   height="1050"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   inkscape:export-filename="/Users/yeargism/Downloads/bikeshed.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="878"
+     id="namedview16"
+     showgrid="false"
+     inkscape:zoom="4.6103844"
+     inkscape:cx="40.66906"
+     inkscape:cy="57.298187"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g4810"
+     fit-margin-top="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     fit-margin-left="5" />
+  <g
+     id="g4810"
+     transform="translate(-8,3)"
+     inkscape:export-xdpi="1068.52"
+     inkscape:export-ydpi="1068.52">
+    <path
+       style="fill:#ffffff;stroke:none;stroke-width:6"
+       d="M 65 5 L 5 37 L 5 43 L 9 40.867188 L 9 98 L 54 98 L 54 74.253906 L 69.458984 62.863281 L 70.546875 66.126953 C 64.877949 69.165281 61 75.146233 61 82 C 61 91.905592 69.094408 100 79 100 C 88.905592 100 97 91.905592 97 82 C 97 72.094408 88.905592 64 79 64 C 78.059452 64 77.142745 64.09575 76.240234 64.236328 L 71.162109 49 L 59 49 L 59 55 L 66.837891 55 L 67.464844 56.878906 L 54 66.798828 L 54 16.867188 L 65 11 L 65 5 z M 34.335938 32.392578 C 36.393296 32.392578 37.757706 37.484668 37.757812 40.853516 C 37.757813 42.272314 37.561211 44.804672 37.351562 47.486328 C 37.101498 50.688755 36.841797 54.001092 36.841797 56.236328 C 36.841797 59.627762 38.254844 63.838652 42.074219 66.365234 L 26.179688 66.365234 C 28.372454 64.938115 31.74778 61.846872 32.054688 56.230469 C 32.232456 52.930783 31.960732 51.131252 31.644531 49.046875 C 31.352104 47.119627 31.021484 44.936693 31.021484 41.042969 C 31.020404 40.982992 30.986776 35.007294 32.984375 32.992188 C 33.383354 32.588127 33.825434 32.392578 34.335938 32.392578 z M 24.128906 68.431641 L 43.763672 68.431641 L 43.763672 70.498047 L 24.128906 70.498047 L 24.128906 68.431641 z M 79 70 C 85.662951 70 91 75.337049 91 82 C 91 88.662951 85.662951 94 79 94 C 72.337049 94 67 88.662951 67 82 C 67 77.7501 69.176751 74.048118 72.478516 71.917969 L 75.318359 80.439453 A 4 4 0 0 1 75.316406 80.441406 A 4 4 0 0 0 75 82 A 4 4 0 0 0 79 86 A 4 4 0 0 0 83 82 A 4 4 0 0 0 81.011719 78.546875 L 78.175781 70.041016 C 78.449345 70.022661 78.72151 70 79 70 z M 24.128906 71.53125 L 43.763672 71.53125 L 43.763672 72.564453 L 24.128906 72.564453 L 24.128906 71.53125 z M 24.128906 73.599609 L 43.763672 73.599609 L 43.763672 75.666016 L 24.128906 75.666016 L 24.128906 73.599609 z M 24.132812 77.732422 L 43.744141 77.732422 C 43.66763 79.603908 43.345522 85.964161 42.423828 89.652344 C 42.172683 90.654764 41.315154 91.422817 40.130859 91.707031 C 38.056965 92.205107 34.252196 92.501953 29.951172 92.501953 C 28.913739 92.501953 27.914528 92.483259 26.964844 92.449219 C 27.493935 90.44546 27.880859 87.355469 27.880859 87.355469 C 27.059341 89.546182 25.700153 92.394801 24.333984 92.300781 C 24.314314 92.299681 24.308529 92.300781 24.292969 92.300781 C 23.27099 92.219083 22.38621 92.114186 21.703125 91.990234 C 21.142046 91.887896 20.777271 91.649313 20.707031 91.332031 C 20.656456 91.107794 20.755424 90.84809 20.941406 90.714844 C 23.907168 88.596428 24.126613 79.9843 24.132812 77.732422 z "
+       transform="translate(8,-3)"
+       id="path2" />
+    <g
+       id="g4657"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4659"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4661"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4663"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4665"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4667"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4669"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4671"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4673"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4675"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4677"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4679"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4681"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4683"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+    <g
+       id="g4685"
+       style="fill:#ffffff"
+       transform="matrix(0.10806595,0,0,0.10806595,10.17391,29.392766)" />
+  </g>
+</svg>
