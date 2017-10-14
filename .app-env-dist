@@ -6,13 +6,17 @@ export TWITTER_OAUTH_SECRET=somedata
 export TWITTER_SEARCH_TERM="somedata"
 
 # B-cycle
-export BCYCLE_API_KEY=somedata
-export BCYCLE_PROGRAM_ID=somedata
+export BCYCLE_CITY=somedata
 
 # Uber
 export UBER_SERVER_TOKEN=somedata
 export UBER_LATITUDE=somedata
 export UBER_LONGITUDE=somedata
+
+# Lyft
+export LYFT_SERVER_TOKEN=somedata
+export LYFT_LATITUDE=somedata
+export LYFT_LONGITUDE=somedata
 
 # Foursquare
 export FOURSQUARE_OAUTH_TOKEN=somedata

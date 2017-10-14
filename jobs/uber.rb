@@ -30,9 +30,6 @@ SCHEDULER.every '5m', :first_in => 0 do |job|
 
     event_name = 'uber_pickup_time'
     send_event(event_name, { items: pickup_times })
-
-  rescue
-    puts "\e[33mYou need to add your UBER_SERVER_TOKEN and define a latitude and longitude.\e[0m"
   end
 
 end
