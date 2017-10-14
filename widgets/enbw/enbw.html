@@ -1,0 +1,12 @@
+<h1 class="title" data-bind="title"></h1>
+
+<table>
+  <tbody>
+    <tr data-foreach-beer="beers">
+      <td><span data-bind="beer.name | raw"></span></td>
+      <td><span data-bind="beer.abv | append '%'"></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>
