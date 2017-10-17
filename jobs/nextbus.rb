@@ -2,7 +2,7 @@ require './lib/nextbus'
 
 NEXTBUS_API_KEY = ENV['NEXTBUS_API_KEY']
 
-SCHEDULER.every '5m', first_in: 0 do
+SCHEDULER.every '1m', first_in: 0 do
   api = NextBus.new(api_key: NEXTBUS_API_KEY)
 
   routes = [

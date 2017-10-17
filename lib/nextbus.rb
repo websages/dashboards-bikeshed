@@ -25,8 +25,10 @@ class NextBus
         moreinfo: 'Last bus has run for the day.'
       }
     else
+      # Ugly hack to avoid using ActiveSupport
+      timezone_offset = DateTime.now.offset.to_s == '-5/24' ? '-05:00' : '-06:00'
       {
-        countdown: DateTime.parse('today at ' + data['next']['arrival_time']),
+        countdown: DateTime.parse('today at ' + data['next']['arrival_time'] + timezone_offset),
         moreinfo: "Route ##{data['route']['route_id']} / " \
           "#{data['route']['route_long_name']} leaves from #{data['stop_name']}"
       }

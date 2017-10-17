@@ -11,7 +11,7 @@ class Dashing.Countdown extends Dashing.Widget
       return
     seconds_until_end = end_timestamp - current_timestamp
     if seconds_until_end < 0
-      @set('text', '')
+      @set('text', '00:00:00')
     else
       d = Math.floor(seconds_until_end/86400)
       h = Math.floor((seconds_until_end-(d*86400))/3600)
