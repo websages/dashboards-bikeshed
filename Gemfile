@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'dashing'
+gem 'smashing'
 gem 'json'
 gem 'fitgem'
 gem 'haml'
