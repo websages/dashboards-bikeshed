@@ -2,6 +2,22 @@
   BNAGH CSS Tweaks
 */
 
+// Orange
+div[data-grid-height="1080"] {
+  .icon-background {
+    font-size: 190px;
+  }
+  [data-sizey="1"] .icon-background {
+    top: -15px;
+  }
+  [data-sizey="2"] .icon-background {
+    top: 150px;
+  }
+  [data-sizey="3"] .icon-background {
+    top: 330px;
+  }
+}
+
 // Keg Left / Right
 div[data-grid-height="768"] {
   h1 {
