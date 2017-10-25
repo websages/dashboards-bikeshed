@@ -1,3 +1,3 @@
 source .app-env
 
-bundle exec dashing start
+bundle exec smashing start

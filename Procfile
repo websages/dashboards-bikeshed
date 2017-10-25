@@ -1,1 +1,1 @@
-web: bundle exec dashing start
+web: bundle exec smashing start
