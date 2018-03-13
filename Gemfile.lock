@@ -50,7 +50,7 @@ GEM
     oauth (0.5.1)
     public_suffix (2.0.4)
     rack (1.5.5)
-    rack-protection (1.5.3)
+    rack-protection (1.5.5)
       rack
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
@@ -118,6 +118,8 @@ DEPENDENCIES
   haml
   httparty
   json
+  rack-protection (~> 1.5.5)
+  sinatra (~> 1.4.8)
   smashing
   twitter (>= 5.9.0)
   xml-simple (~> 1.1.4)
