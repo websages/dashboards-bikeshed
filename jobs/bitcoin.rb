@@ -11,6 +11,10 @@ SCHEDULER.every '10m', first_in: 0 do
   eth_last_price = eth_current_price
   eth_current_price = get_coinbase_data('ETH')
 
+  # Ripple
+  xrp_last_price = eth_current_price
+  xrp_current_price = get_coinbase_data('XRP')
+
   send_event(
     'bitcoin',
     current: btc_current_price,
@@ -22,6 +26,13 @@ SCHEDULER.every '10m', first_in: 0 do
     'etherium',
     current: eth_current_price,
     last: eth_last_price,
+    prefix: '$'
+  )
+
+  send_event(
+    'ripple',
+    current: xrp_current_price,
+    last: xrp_last_price,
     prefix: '$'
   )
 end

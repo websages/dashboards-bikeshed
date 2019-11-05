@@ -9,7 +9,7 @@ SCHEDULER.every '1m', first_in: 0 do
     {
       route: 4,
       direction: 0,
-      stop_id: 'MCC4_14'
+      stop_id: 'MCC4_18'
     },
     {
       route: 28,
